@@ -1,3 +1,4 @@
+import shutil
 import click
 
 from work import work
@@ -30,7 +31,8 @@ def process(input_file_path: str, output_file_path: str, key: str):
     except FileNotFoundError:
         pass
 
-    work(input_file_path, output_file_path, key)
+    work(input_file_path, key)
+    shutil.move("~temp", output_file_path)
 
 
 if __name__ == "__main__":
