@@ -11,15 +11,15 @@ cd xor_encryption
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
-python main.py 
+python main.py --help
 ```
 
 #### Установка проекта на Windows
 ```
 git clone https://github.com/FedorovVladimir/xor_encryption
 cd xor_encryption
-python3 -m venv venv
+python -m venv venv
 venv\Scripts\activate.bat
 pip install -r requirements.txt
-python main.py 
+python main.py --help 
 ```
